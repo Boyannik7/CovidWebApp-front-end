@@ -190,11 +190,13 @@ select {
 */
 .tableFixHead {
   overflow-y: auto;
-  height: 18rem;
-  width: 500px;
+  height: 330px;
+  width: 630px;
   display: inline-block;
   position: absolute;
   top: 50px;
+  background-color: lightgray;
+  color: black;
 }
 .tableFixHead thead th {
   position: sticky;
@@ -202,7 +204,7 @@ select {
 }
 table {
   border-collapse: collapse;
-  width: 30%;
+  width: 35%;
 }
 th,
 td {

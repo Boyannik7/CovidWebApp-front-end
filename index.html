@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="./requests.js"></script>
 
   <style>
@@ -210,6 +211,7 @@
     </div> -->
 
   </div>
+
   <div id="section31" class="container-fluid ">
     <div class="row">
       <div class="col-md-6">
@@ -227,7 +229,7 @@
           <h1>TABLE VIEW </h1>
           <p>menu</p>
           <p>table/grid</p>
-    
+
           <label for="countriesToOmmit">If you dont want to see information about a certain country please 'TICK' it
             below!</label>
           <br></br>
@@ -241,14 +243,16 @@
             <input type="checkbox" id="country4" name="country4" value="France">
             <label for="country3"> France</label><br>
           </div>
-    
+
           <button class="button" id="tableButton" style="vertical-align:middle"><span>SUBMIT </span></button>
+
+
         </div>
       </div>
     </div>
-    
 
-    
+
+
 
   </div>
   <div id="section32" class="container-fluid text-left">
@@ -273,13 +277,14 @@
     <div class="hiddenSection32" id="hiddenSection32" style="visibility: hidden">
       <h1>Chart appears here!</h1>
     </div> -->
+    <script src="CovidCharts/index.html"></script>
+    <canvas id="myChart" width="1000px" height="800px"></canvas>
+    <select class="countryOptions"></select>
 
     <form>
-      <input type="button" value="Display chart" onclick="display()" />
+      <input type="button" value="Result" onclick="makeChart()" />
     </form>
-    <script src="./CovidCharts/index.html">
-    </script>
-
+    
   </div>
 
   <div id="section4">
