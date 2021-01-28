@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>COVIDINFO</title>
   <meta charset="utf-8">
@@ -16,282 +17,376 @@
 
   <style>
     body {
-      position: relative; 
+      position: relative;
     }
-    #section1 {padding-top:50px;height:500px;color: #fff; background-color: #6bb921;}
-    #section2 {padding-top:50px;height:500px;color: #fff; background-color: #5d5d5d;}
-    #section31 {padding-top:50px;height:500px;color: #fff; background-color: #6bb921;}
-    #section32 {padding-top:50px;height:500px;color: #fff; background-color: #5d5d5d;}
-    #section4 {padding-top:50px;height:500px;color: #fff; background-color: #6bb921;}
+
+    #section1 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #6bb921;
+    }
+
+    #section2 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #5d5d5d;
+    }
+
+    #section31 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #6bb921;
+    }
+
+    #section32 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #5d5d5d;
+    }
+
+    #section4 {
+      padding-top: 50px;
+      height: 500px;
+      color: #fff;
+      background-color: #6bb921;
+    }
   </style>
   <style>
-    .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img
-  {
-    width: 100%;
-    margin: auto;
-  }
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+      width: 100%;
+      margin: auto;
+    }
   </style>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <!--header-->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="#">CovidInfo</a>
+  <!--header-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">CovidInfo</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#section1">HOME</a></li>
+            <li><a href="#section2">HEATMAP</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE DATA VIEWS<span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#section31">TABLE VIEW</a></li>
+                <li><a href="#section32">CHARTS VIEW</a></li>
+              </ul>
+            </li>
+            <li><a href="#section4">CONTACTS</a></li>
+          </ul>
         </div>
-        <div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li><a href="#section1">HOME</a></li>
-              <li><a href="#section2">HEATMAP</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE DATA VIEWS<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#section31">TABLE VIEW</a></li>
-                  <li><a href="#section32">CHARTS VIEW</a></li>
-                </ul>
-              </li>
-              <li><a href="#section4">CONTACTS</a></li>
-            </ul>
+      </div>
+    </div>
+  </nav>
+  <!--header end-->
+
+  <!--site content-->
+
+  <!--Site title-->
+  <div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+          <img src="./assets/Bulgaria-waiting-for-the-coronavirus-stress-test.jpg" alt="Virus">
+          <div class="carousel-caption">
+            <h3>COVID-19</h3>
+            <p>THE BEST PROTECTION IS INFORMATION!</p>
           </div>
         </div>
-      </div>
-    </nav>
-    <!--header end-->
-  
-<!--site content-->
 
- <!--Site title-->
-<div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="./assets/virus-1.jpg" alt="Virus">
-        <div class="carousel-caption">
-          <h3>COVID-19</h3>
-          <p>THE BEST PROTECTION IS INFORMATION!</p>
+        <div class="item">
+          <img src="./assets/charts3.png" alt="chart">
+          <div class="carousel-caption">
+            <h3>COVID-19</h3>
+            <p>Chart View</p>
+          </div>
         </div>
-      </div>
 
-      <div class="item">
-        <img src="./assets/gym-wallpaper-1.jpg" alt="GYM">
-        <div class="carousel-caption">
-          <h3>COVID-19</h3>
-          <p>STAY FIT!</p>
+        <div class="item">
+          <img src="./assets/radius-map.png">
+          <div class="carousel-caption">
+            <h3>COVID-19</h3>
+            <p>HEATMAP!</p>
+          </div>
         </div>
+
       </div>
 
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!---xSite title-x-->
+
+
+  <div id="section1" class="container-fluid text-center">
+
+    <h1 id="titlesite">CORONAVIRUS</h1>
+    <img src="./assets/coronavirus-8-455764-810x0.jpeg" id="title_image">
+    <p style="width: 50%;" id="coronatext">Coronavirus disease (COVID-19) is an infectious disease caused by a newly
+      discovered coronavirus.Most people infected with the COVID-19 virus will
+      experience mild to moderate respiratory illness and recover without requiring
+      special treatment. Older people, and those with underlying medical problems
+      like cardiovascular disease, diabetes, chronic respiratory disease, and cancer
+      are more likely to develop serious illness.The best way to prevent and slow
+      down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads.
+      Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not
+      touching your face. </p>
+  </div>
+
+  <div id="section2" class="container-fluid text-left">
+    <h1>HEATMAP</h1>
+
+    <form>
+      <input type="button" value="Display heatmap" onclick="display()" />
+    </form>
+    <script src="src/components/Covid19.jsx">
+    </script>
+    <!-- 
+    <label for="heatmapCountryChoiceLb">Choose country:</label>
+    <div class="select">
+      <select name="countries" id="heatmapCountriesToChooseFrom">
+
+        <option selected disabled>Choose an option!</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Germany">Germany</option>
+        <option value="France">France</option>
+      </select>
+    </div>
+    <br><br>
+
+    <label for="dataFormatlLb">Aggregate by:</label>
+
+    <div class="select">
+      <select name="formatComboBox" id="formatsOfAggregation">
+        <option selected disabled>Choose an option!</option>
+        <option value="day">Day</option>
+        <option value="week">Week</option>
+        <option value="month">Month</option>
+
+      </select>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <br><br>
+    <button class="button" id="heatmapButton" style="vertical-align:middle"><span>SUBMIT </span></button>
+
+    <div class="hiddenSection2" id="hiddenSection2" style="visibility: hidden">
+      <h1>Heatmap appears here!</h1>
+    </div> -->
+
   </div>
-</div>
-<!---xSite title-x-->
+  <div id="section31" class="container-fluid text-right">
+    <div class="table-content">
+      <h1>TABLE VIEW </h1>
+      <p>menu</p>
+      <p>table/grid</p>
 
+      <label for="countriesToOmmit">If you dont want to see information about a certain country please 'TICK' it
+        below!</label>
+      <br></br>
+      <div class="checkboxes">
+        <input type="checkbox" id="country1" name="country1" value="Bulgaria">
+        <label for="country1"> Bulgaria</label><br>
+        <input type="checkbox" id="country2" name="country2" value="United Kingdom">
+        <label for="country2"> United Kingdom</label><br>
+        <input type="checkbox" id="country3" name="country3" value="Germany">
+        <label for="country3"> Germany</label><br>
+        <input type="checkbox" id="country4" name="country4" value="France">
+        <label for="country3"> France</label><br>
+      </div>
 
-<div id="section1" class="container-fluid text-center">
-  
-  <h1>SITE TITLE</h1>
-  <p>info</p>
-  <p>info</p>
-</div>
-<div id="section2" class="container-fluid text-left">
-  <h1>HEATMAP</h1>
-  
-  <label for="heatmapCountryChoiceLb">Choose country:</label>
-  <div class="select">
-    <select name="countries" id="heatmapCountriesToChooseFrom">
+      <button class="button" id="tableButton" style="vertical-align:middle"><span>SUBMIT </span></button>
+    </div>
 
-      <option selected disabled>Choose an option!</option>
-      <option value="Bulgaria">Bulgaria</option>
-      <option value="United Kingdom">United Kingdom</option>
-      <option value="Germany">Germany</option>
-      <option value="France">France</option>
-    </select>
+    <div class="hiddenSection31" id="hiddenSection31" style="visibility: hidden">
+      <div class="tableFixHead">
+        <table id="table" cellspacing="1" class="table table-bordered">
+          <thead id="table-head"></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
   </div>
-  <br><br>
+  <div id="section32" class="container-fluid text-left">
+    <h1>CHART VIEW</h1>
+    <!-- <p>menu</p>
+    <p>chart</p>
 
-  <label for="dataFormatlLb">Aggregate by:</label>
+    <label for="chartCountryChoiceLb">Choose country:</label>
+    <div class="select">
+      <select name="countries2" id="chartCountriesToChooseFrom">
 
-  <div class="select">
-    <select name="formatComboBox" id="formatsOfAggregation">
-      <option selected disabled>Choose an option!</option>
-      <option value="day">Day</option>
-      <option value="week">Week</option>
-      <option value="month">Month</option>
-      
-    </select>
-  </div>
+        <option selected disabled>Choose an option!</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Germany">Germany</option>
+        <option value="France">France</option>
+      </select>
+    </div>
+    <br></br>
+    <button class="button" id="chartButton" style="vertical-align:middle"><span>SUBMIT </span></button>
 
-  <br><br>
-  <button class="button" id="heatmapButton" style="vertical-align:middle"><span>SUBMIT </span></button>
+    <div class="hiddenSection32" id="hiddenSection32" style="visibility: hidden">
+      <h1>Chart appears here!</h1>
+    </div> -->
 
-  <div class="hiddenSection2" id="hiddenSection2" style="visibility: hidden">
-    <h1>Heatmap appears here!</h1>
-  </div>
+    <form>
+      <input type="button" value="Display chart" onclick="display()" />
+    </form>
+    <script src="./CovidCharts/index.html">
+    </script>
 
-</div>
-<div id="section31" class="container-fluid text-right">
-  <h1>TABLE VIEW </h1>
-  <p>menu</p>
-  <p>table/grid</p>
-
-  <label for="countriesToOmmit">If you dont want to see information about a certain country please 'TICK' it below!</label>
-  <br></br>
-  <div class="checkboxes">
-    <input type="checkbox" id="country1" name="country1" value="Bulgaria">
-    <label for="country1"> Bulgaria</label><br>
-    <input type="checkbox" id="country2" name="country2" value="United Kingdom">
-    <label for="country2"> United Kingdom</label><br>
-    <input type="checkbox" id="country3" name="country3" value="Germany">
-    <label for="country3"> Germany</label><br>
-    <input type="checkbox" id="country4" name="country4" value="France">
-    <label for="country3"> France</label><br>
-  </div>
-  <button class="button" id="tableButton" style="vertical-align:middle"><span>SUBMIT </span></button>
-
-  <div class="hiddenSection31" id="hiddenSection31" style="visibility: hidden">
-    <h1>Table apears here!</h1>
   </div>
 
-</div>
-<div id="section32" class="container-fluid text-left">
-  <h1>CHART VIEW</h1>
-  <p>menu</p>
-  <p>chart</p>
+  <div id="section4">
+    <h1 style="text-align: center;">CONTACT US!</h1>
+    <div class="wrapper">
+      <div class="contact-form">
+        <div class="input-fields">
+          <input type="text" class="input" placeholder="First Name">
+          <input type="text" class="input" placeholder="Last Name">
+          <input type="text" class="input" placeholder="Email">
+        </div>
 
-  <label for="chartCountryChoiceLb">Choose country:</label>
-  <div class="select">
-    <select name="countries2" id="chartCountriesToChooseFrom">
-
-      <option selected disabled>Choose an option!</option>
-      <option value="Bulgaria">Bulgaria</option>
-      <option value="United Kingdom">United Kingdom</option>
-      <option value="Germany">Germany</option>
-      <option value="France">France</option>
-    </select>
-  </div>
-  <br></br>
-  <button class="button" id="chartButton" style="vertical-align:middle"><span>SUBMIT </span></button>
-
-  <div class="hiddenSection32" id="hiddenSection32" style="visibility: hidden">
-    <h1>Chart appears here!</h1>
+        <div class="msg">
+          <textarea placeholder="Message"></textarea>
+          <div class="btn">Send</div>
+        </div>
+      </div>
+    </div>
   </div>
 
-</div>
-<div id="section4" class="container-fluid text-center">
-  <h1>CONTACTS</h1>
-  <p>info</p>
-  <p>info</p>
-</div>
-
-<!--site content end-->
+  <!--site content end-->
 
 
-<!-- Footer -->
-<footer class="page-footer font-small ">
+  <!-- Footer -->
+  <footer class="page-footer font-small ">
 
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
-  
+
       <!-- Grid row -->
       <div class="row footer-row">
-        
+
         <!-- Grid column -->
         <div class="col-md-6">
-  
+
           <!-- Content -->
-          <h5 class="Footer-content text-uppercase">Some description! </h5>
-          <p>Some text here! Motivational quotes or whatever. Machkai Grisho!</p>
-  
+          <h5 class="Footer-content text-uppercase">Attention! </h5>
+          <p>COVID-19 is a serious disease! Stay informed!</p>
+
         </div>
         <!-- Grid column -->
-  
+
         <hr class="clearfix w-100 d-md-none pb-3">
-  
+
         <!-- Grid column -->
         <div class="col-md-3">
-  
+
           <!-- Links -->
           <h5 class="Instagram-links text-uppercase">Follow us on: </h5>
-  
+
           <ul class="list-unstyled">
             <li>
-                <i class="fa fa-instagram" aria-hidden="true"><a href="#!">  @NeshtoSiCovidINF</a> </i>
+              <i class="fa fa-facebook-square" aria-hidden="true"><a href="https://www.facebook.com/rangel.ivanov.1">
+                  Rangel</a> </i>
             </li>
             <li>
-                <i class="fa fa-instagram" aria-hidden="true"><a href="#!">  @Brsdsa56s</a> </i>
+              <i class="fa fa-facebook-square" aria-hidden="true"><a href="https://www.facebook.com/iliqn.kordev">
+                  Iliqn</a> </i>
             </li>
             <li>
-                <i class="fa fa-instagram" aria-hidden="true"><a href="#!">  @Bobsana</a> </i>
+              <i class="fa fa-facebook-square" aria-hidden="true"><a href="https://www.facebook.com/martin.lubenov.7">
+                  Martin</a> </i>
+            </li>
+            <li>
+              <i class="fa fa-facebook-square" aria-hidden="true"><a href="https://www.facebook.com/boyanwe"> Boqn</a>
+              </i>
+            </li>
+            <li>
+              <i class="fa fa-facebook-square" aria-hidden="true"><a
+                  href="https://www.facebook.com/kristina.atanasova.92/"> Krisi</a> </i>
             </li>
           </ul>
-  
+
         </div>
         <!-- Grid column -->
-  
+
         <!-- Grid column -->
         <div class="col-md-3">
           <!-- Links -->
           <h5 class="Other-links text-uppercase">Links</h5>
-  
+
           <ul class="list-unstyled">
             <li>
-                <i class="fa fa-facebook-square" aria-hidden="true"> <a href="#"> Facebook link! </a></i> 
+              <i class="fa fa-facebook-square" aria-hidden="true"> <a
+                  href="https://www.facebook.com/coronavirusnzupdates"> Coronavirus info </a></i>
             </li>
             <li>
-                <i class="fa fa-twitter" aria-hidden="true"><a href="#"> Twitter link! </a></i>
+              <i class="fa fa-twitter" aria-hidden="true"><a
+                  href="https://blog.twitter.com/en_us/topics/company/2020/covid-19.html"> Covid blog </a></i>
             </li>
             <li>
-              <i class="fa fa-instagram" aria-hidden="true"><a href="#"> Instagram link! </a></i> 
-            </li>
-            <li>
-              <i class="fa fa-youtube" aria-hidden="true"><a href="#"> Youtube link! </a></i>  
+              <i class="fa fa-youtube" aria-hidden="true"><a
+                  href="https://www.youtube.com/channel/UCt0gvgpDmTwavGRTvlvTh8A"> Updates info </a></i>
             </li>
           </ul>
-  
+
         </div>
         <!-- Grid column -->
-  
+
       </div>
       <!-- Grid row -->
-  
+
     </div>
     <!-- Footer Links -->
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://somelink.com/"> tuBoyz.com</a>
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://tu-sofia.bg/"> Technical University Sofia</a>
     </div>
     <!-- Copyright -->
-  
+
   </footer>
   <!-- Footer -->
 
 
 
 </body>
+
 </html>

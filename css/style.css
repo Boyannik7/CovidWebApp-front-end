@@ -1,121 +1,220 @@
-.container 
-{
-    width: 100% !important;
-    padding-left: 0% !important; 
-    padding-right: 0% !important;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgb(126, 126, 126);
+.container {
+  width: 100% !important;
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(126, 126, 126);
 }
 
-.carousel .item 
-{
-    height: 600px; 
+.carousel .item {
+  height: 600px;
 }
 
-.page-footer
-{
-    background-color: gray;
-    padding-top: 15px;
+.page-footer {
+  background-color: gray;
+  padding-top: 15px;
 }
-.footer-copyright
-{
+.footer-copyright {
   padding-top: 15px;
   padding-bottom: 15px;
-    background-color:#3333;
+  background-color: #3333;
 }
 
- /* BUTTON CSS*/
+/* BUTTON CSS*/
 .button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #8a15d8;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 15px;
-    padding: 20px;
-    width: 150px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 35px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  /* Combo box CSS*/
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background: #8a15d8;
-    background-image: none;
-  }
-  /* Remove IE arrow */
-  select::-ms-expand {
-    display: none;
-  }
-  /* Custom Select */
-  .select {
-    position: relative;
-    display: flex;
-    width: 200px;
-    height: 40px;
-    line-height: 3;
-    background: #8a15d8;
-    overflow: hidden;
-    border-radius: .25em;
-  }
-  select {
-    flex: 1;
-    padding: 0 .5em;
-    color: #b778e0;
-    cursor: pointer;
-  }
-  /* Arrow */
-  .select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 1em;
-    background: #a700d1;
-    cursor: pointer;
-    pointer-events: none;
-    -webkit-transition: .25s all ease;
-    -o-transition: .25s all ease;
-    transition: .25s all ease;
-  }
-  /* Transition */
-  .select:hover::after {
-    color: #9300ce;
-  }
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #8a15d8;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-  
-  
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 35px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Combo box CSS*/
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #8a15d8;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  line-height: 3;
+  background: #8a15d8;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #b778e0;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #a700d1;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #9300ce;
+}
+
+#title_image {
+  float: left;
+  height: 300px;
+  position: relative;
+  left: 100px;
+  top: 50px;
+  border-radius: 25px;
+}
+#titlesite {
+  position: absolute;
+  margin-left: 960px;
+  margin-top: -5px;
+}
+#coronatext {
+  position: absolute;
+  font-size: 20px;
+  margin-left: 730px;
+  margin-top: 100px;
+} 
+.contact-form {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border-bottom: 2px solid #6bb921;
+  padding: 10px;
+  color: #6bb921;
+  width: 100%;
+}
+.msg textarea {
+  height: 212px;
+}
+::-webkit-input-placeholder {
+  color: #6bb921;
+}
+::-moz-input-placeholder {
+  color: #6bb921;
+}
+::-ms-input-placeholder {
+  color: #6bb921;
+}
+.btn {
+  background: #6bb921;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Table */
+
+/* .table-content {
+  display: inline-block;
+  position: absolute;
+  left: 650px;
+  bottom: 600px;
+}
+*/
+.tableFixHead {
+  overflow-y: auto;
+  height: 18rem;
+  width: 500px;
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+}
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+}
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+th,
+td {
+  padding: 8px 16px;
+}
+th {
+  background: #eee;
+}
+.tableFixHead,
+.tableFixHead td {
+  box-shadow: inset 1px -1px #000;
+}
+.tableFixHead th {
+  box-shadow: inset 1px 1px #000, 0 1px #000;
+}

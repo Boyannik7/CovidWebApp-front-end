@@ -249,5 +249,60 @@ $("#heatmapButton").on("click",function () {
 })
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var getDataForTable = function (jsonDataVar) {
+
+    let table = document.createElement("table");
+    let trow = "";
+    let headRow = "";
+
+    headRow += "<tr>";
 
 
+    for (let j = 0; j < jsonDataVar.column_names.length; j++){
+         
+         headRow += 
+         "<th>" + jsonDataVar.column_names[j]
+         "</th>";
+
+  }
+
+      headRow += "</tr>";
+
+    for (let i = 0; i < jsonDataVar.resources.length; i++) {
+        trow +=
+        "<tr>" +
+        "<td>" +
+        jsonDataVar.resources[i].date +
+        "</td>" +
+        "<td>" +
+        jsonDataVar.resources[i].country +
+        "</td>" +
+        "<td>" +
+        jsonDataVar.resources[i].confirmed +
+        "</td>" +
+        "<td>" +
+        jsonDataVar.resources[i].deaths +
+        "</td>" +
+        "<td>" +
+        jsonDataVar.resources[i].recovered +
+        "</td>" +
+        "<td>" +
+        jsonDataVar.resources[i].active +
+        "</td>" +
+        "<td>" +
+        jsonDataVar.resources[i].new_cases +
+        "</td>" +
+        "<td>" +
+        jsonDataVar.resources[i].new_deaths +
+        "</td>" +
+        "<td>" +
+        jsonDataVar.resources[i].new_recovered +
+        "</td>" +
+        "</tr>";
+    }
+    document.getElementById("table-head").innerHTML = headRow;
+    document.getElementById("table-body").innerHTML = trow;
+
+};
