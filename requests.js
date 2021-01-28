@@ -33,6 +33,7 @@ const getTableData = function() {
         console.log(tableDataJsonResponse)
 
         document.getElementById("hiddenSection31").style.visibility= 'visible'
+        getDataForTable(tableDataJsonResponse)
         
     },
     error:function(){
